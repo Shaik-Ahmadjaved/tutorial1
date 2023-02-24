@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>validation of javascript</title>
+</head>
+<body>
+<h1>dynamic website</h1>
+<form name="myform" method="post" 
+enter password:<input type="password" name="pass1"><br/>
+confirm password:<input type="password" name="pass2"><br/>
+<input type="submit" value="check">
+</form>
+<script language="javascript">
+function validpassword(){
+var pwd=document.myform.pass1.value;
+var cpwd=document.myform.pass2.value;
+}
+if (password.length<6)
+{
+	alert("the password must contain 6 characters");
+                return false
+}
+if(pwd==cpwd)
+{ 
+	return true;
+}
+else
+{
+	alert("pls check the password the confirm password and password must be same")
+                  return false;
+}
